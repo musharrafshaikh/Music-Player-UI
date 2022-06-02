@@ -1,0 +1,509 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100;
+    background-color: black;
+   /* background-image: url(images/background-iamge.jpg);*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+
+}
+/*---Header section---*/
+.header-container{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+ .left-side{
+    width: 400px;
+    height: 80px; 
+    margin-left: 1.5rem;
+   
+    align-items: center;
+    display: flex;
+}
+.left-side img{
+    width:120px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 8px;
+}
+.left-side h2{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px;
+    font-family: cursive;
+    color: whitesmoke;
+
+    
+}
+.left-side p{
+    display: inline-block;
+    margin-left: 80px;
+    font-size: 22px;
+    font-family: cursive;
+    color: whitesmoke;
+}
+.right-side{
+    width: 800px;
+    height: 80px;
+    margin-right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.search-bar{
+    width: 500px;
+    height: 40px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+
+}
+.right-side .search-song{
+    height: 30px;
+    width: 350px;
+    border-radius: 10px;
+    border: none;
+    background-color:whitesmoke;
+
+}
+ .notify{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center; 
+}
+.profile-image img{
+  width:80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    margin-top: 7px;
+}
+
+/*----Header close*----/
+
+/*Main section*/
+.main-conatiner{
+    width: 65%;
+    display: inline-block;
+}
+/*-----Treanding Section-----*/
+.trendings{
+    width: 50vw;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 60px;    
+}
+.trendings img{
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    transition: .5s;
+}
+.trendings img:hover{
+    width: 270px;
+    height: 270px;
+}
+/*----Treanding section close---*/
+
+.display-heading{
+  color: antiquewhite;
+  font-family: cursive;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 60px;
+  transition: .5s;
+}
+
+
+.latest-release{
+  display: grid;
+  margin-left: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+   
+}
+
+.album {
+   /* background-color: #271e1e;*/
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    cursor: pointer;
+  }
+  
+  .album img {
+    width: 120px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .album img:hover {
+    box-shadow: 4px 4px 27px #242020;
+  }
+  
+  .album-details p {
+    width: 150px;
+    font-family: 'Comfortaa', cursive;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    color: whitesmoke;
+  }
+  
+  .album-stats a {
+    font-size: 12px;
+    color: #3f729b;
+  }
+  
+  .album-stats {
+    font-size: 12px;
+    color: #3f729b;
+  }
+  
+  .album i {
+      color: antiquewhite;
+    position: relative;
+    margin-left: 80px;
+    margin-top: -110px;
+    font-size: 30px;
+  }
+  
+  .album i:hover .dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown {
+   width: 90px;
+    position: absolute;
+    left: -80px;
+    top: 10px;
+    background-color: whitesmoke;
+    display: none;
+    transition: opacity 0.3s;
+    color: black;
+    border-radius: 2px;
+  }
+  
+  .dropdown p {
+    padding: 4px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  
+  .dropdown p:hover {
+    background-color: rgb(194, 242, 194);
+  }
+  
+
+
+
+
+.popular-artist{
+    width: 60vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px 45px;
+
+}
+
+
+.artist-box img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    
+}
+
+
+.aside{
+    width: 30%;
+    height: 850px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+}
+.playlist-container{
+    width: 100%;
+    height: 850px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.playlist{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(18, 21, 21);
+    margin: 5px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.playlist .index {
+    font-size: 20px;
+    color:whitesmoke;
+    padding-left: 10px;
+  }
+  
+.playlist img{
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 3px;
+}
+.song-info {
+    margin-left: 10px;
+    width: 210px;
+  }
+  .song-info p:nth-child(1) {
+    font-family: 'Comfortaa', cursive;
+    font-size: 17px;
+    color: aliceblue;
+  }
+  
+  .song-info p:nth-child(2) {
+    font-size: 15px;
+    
+    color: grey;
+  }
+
+ .playlist i{
+     color: aliceblue;
+     margin-left: 40px;
+     
+ }
+  
+
+
+.theme1-container{
+  width: 60%;
+  height: 110px;
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 25px 45px;
+  margin-top: -20px;
+  border-radius: 4px;
+}
+.song-display{
+  width: 100px;
+  height: 100px;
+}
+.song-display img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgb(110, 233, 110);
+}
+
+
+.theme2-container{
+  width: 60%;
+  height: 160px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 45px;
+  
+  border-radius: 4px;
+}
+
+.theme2-container img{
+  width: 260px;
+  height: 150px;
+ 
+}
+/*english song*/
+.english-song-container{
+  width: 60%;
+  height: 250px;
+ 
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 45px;
+}
+.english-song{
+  width: 140px;
+  height: 150px;
+}
+.english-song img{
+  width: 140px;
+  height: 160px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.english-song h3{
+  font-size: 23px;
+  color: whitesmoke;
+  margin-top: -4px;
+}
+.english-song p{
+  font-size: 15px;
+  color: gray;
+  margin-top: -20px;
+}
+
+.english-song img:hover {
+  box-shadow: 4px 4px 27px #f0c7c7;
+}
+
+/*footer section*/
+
+/* Footer section starts here*/
+/* this is the container for the whole footer */
+footer {
+	
+	bottom: 1px;
+	width: 100%;
+	height: 60px;
+	background-color: #211f1f;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: nowrap;
+	padding: 0px 3%;
+	margin-top: -40px;
+  position: fixed;
+}
+/* footer is divided into 3 parts */
+/* 1. first part of the footer */
+.active-song-description {
+	/* border:1px solid white; */
+	height: 90%;
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+/* the current song which is being played, this is the image container for that. */
+#song-image {
+	width: 50px;
+	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
+}
+/* current song image */
+#song-image img {
+	width: 100%;
+	height: 100%;
+}
+/* heart and ban icon */
+.heart-and-ban-icon {
+	height: 100%;
+	padding-top: 4%;
+}
+/* song decscription */
+.song-desc {
+	margin-right: 1%;
+	margin-left: 1%;
+}
+/* song name */
+.song-desc div:nth-child(1) {
+	font-size: 16px;
+  color: aliceblue;
+}
+/* song author */
+.song-desc div:nth-child(2) {
+	font-size: 13px;
+  color: aquamarine;
+}
+
+/* 2. Second part of the footer*/
+.player {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+/* controls is the container for all the center controls of the player */
+.controls {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+}
+/* this is the song-duration slider */
+#slider {
+	width: 100%;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+}
+/* ////////// */
+.time {
+	margin: 0px 10px;
+}
+
+/* adjusting the slider for better visuals */
+.slidecontainer {
+	width: 100%;
+}
+/* for audio and main center player */
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.5;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+}
+/* hover effect for the slider */
+.slider:hover {
+	opacity: 1;
+}
+/* these are for adjusting the dimensions and default styling of the long-slider */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	background: #007bff;
+	cursor: pointer;
+}
+/* this is the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: #4caf50;
+	cursor: pointer;
+}
+
+/* third part of the footer */
+/* this contains the extra icons and slider for volume */
+/* this is also a container */
+.extras {
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
